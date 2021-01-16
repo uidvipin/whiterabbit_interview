@@ -1,0 +1,699 @@
+@charset "utf-8";
+/***********************************************************
+
+	Client: 	Interview at White Rabbit Group Inc.
+	Type: 		CSS Document
+	Designer: 	Vipin Chandran (Frontend Development Only)
+	E-mail		vipinradhalayam@gmail.com
+			
+************************************************************/
+
+
+/********************************
+		Fonts Used
+*********************************/
+@import url("fonts.css");
+
+/********************************
+		General Styles
+*********************************/
+body{
+	font-family: 'Sailec', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height:normal;
+	letter-spacing:normal;
+	color:#8F9095;
+	background: #fff;
+}
+h1, h2, h3, h4{
+	font-style: normal;
+	font-weight: 500;
+}
+h1{
+	font-size: 57px;
+	line-height: 120.5%;
+	color: #151442;
+}
+h2{
+	font-size: 24px;
+	font-weight: 500;
+	color: #151442;
+}
+h3{
+	font-size: 22px;
+	font-weight: 400;
+}
+.section{
+	padding: 70px 0;
+}
+.img-kal{width: 100%; height: auto;}
+.btn-kal{
+    color: #102522;
+    font-size: 12px;
+    font-weight: normal;
+    display: block;
+    text-align: center;
+	border-radius: 48px;
+    height: 42px;
+    padding-left: 15px;
+    padding-right: 50px;
+    padding-top: 13px;
+    border:1px solid #102421;
+    position: relative;
+    text-decoration: none;
+    background-color: transparent;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+.btn-kal:after, .btn-kal::after{
+	content: '';
+    display: block;
+    width: 13px;
+    height: 12px;
+    position: absolute;
+    right: 12px;
+    top: 15px;
+    background-image: url(../imgs/icon-arrow-blak.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+.btn-kal:hover, .btn-kal:focus{
+	background-color: #102421;
+	color:#fff;
+	text-decoration: none;
+}
+.btn-kal:hover:after, .btn-kal:hover::after, .btn-kal:focus:after, .btn-kal:focus::after{
+	background-image: url(../imgs/icon-arrow-white.png);
+}
+.flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/********************************
+		Header/Menu Section
+*********************************/
+.kal-header{
+	background-color: transparent;
+	border-color: transparent;
+	box-shadow: none;
+	padding-top: 15px;
+    padding-bottom: 15px;
+    transition: 1s;
+    -webkit-transition:1s;
+}
+.img-kal-logo{
+	width:65px;
+	height:auto;
+	margin-top: 15px;
+	z-index: 1;
+	-webkit-filter: drop-shadow(1px 1px 0px rgb(0 0 0 / 00%));
+  	filter: drop-shadow(1px 1px 0px rgb(0 0 0 / 00%));
+	-webkit-transition: 1s; /* For Safari 3.1 to 6.0 */
+	transition: 1s;
+}
+.kal-header .navbar-nav>li>a{
+	font-style: normal;
+	font-weight: 500;
+	font-size: 0.65em;
+	line-height: 120.5%;
+	color: #151442;
+}
+.kal-header .navbar-nav>li>a:hover, .kal-header .navbar-nav>li.active>a, .kal-header .navbar-nav>li.active>a:hover, .kal-header .navbar-nav>li>a:focus{
+	color: #151442;
+}
+.ac-menu-cont {
+    float: right;
+}
+ul.ac-menu>li {
+    display: block;
+    float: left;
+}
+ul.ac-menu>li>a{
+	padding-left: 55px;
+	padding-right: 0;
+	position: relative;
+}
+.citems{
+	position: absolute;
+	right: 22px;
+    top: 17px;
+	width: 14px;
+    height: 14px;
+    background-color: #151442;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul.ac-menu>li:first-child>a>img{width: 13px; height: auto;}
+ul.ac-menu>li:last-child>a>img{width: 16px; height: auto;}
+.kal-header.kal-scroll{
+	background-color: #fff;
+	box-shadow: 0 5px 10px 0 rgba(4,0,98,.05);
+}
+.kal-header.kal-scroll .img-kal-logo {
+    -webkit-filter: drop-shadow(1px 1px 0px rgb(0 0 0 / 60%));
+  	filter: drop-shadow(1px 1px 0px rgb(0 0 0 / 60%));
+}
+
+
+
+
+
+
+/********************************
+		      Home
+*********************************/
+.kal-home{
+	position: relative;
+	min-height: 100vh;
+	padding: 90px 0;
+}
+.ban-ulay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background: #102421;
+	width: 59.16666%;
+}
+.col-kh-left, .col-kh-right{float: left; min-height: 1px; position: relative; padding: 0 15px;}
+.col-kh-left{width: 51.5%; padding-left: 105px; padding-top: 106px;}
+.col-kh-right{width: 48.5%;}
+.kal-home h1{
+	color: #fff;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 61px;
+	line-height: 120.5%;
+	margin-bottom: 40px;
+	margin-top: 0;
+}
+.kal-home h4, .kal-home p{
+	font-size: 10px;
+	line-height: 120.5%;
+	letter-spacing: 0.5em;
+	color: #D2D2D2;
+}
+.kal-home p{letter-spacing: normal; font-size: 14px; font-weight: normal; margin-bottom: 60px;}
+.kal-home .btn-kal{
+	float: left;
+	margin-right: 40px;
+	width: 115px;
+	height: 40px;
+	background: #C7E1BF;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
+    padding: 5px;
+    font-size: 10px;
+}
+.kal-home .btn-kal:after, .kal-home .btn-kal::after{display: none;}
+
+
+
+/********************************
+		 	PRODUCTS
+*********************************/
+.kal-products{
+	padding-top: 100px;
+}
+.btn-bag {
+    position: absolute;
+    right: 0px;
+    top: 32px;
+}
+.kal-products h1{margin-bottom: 50px;}
+.pro-box{text-align: center;}
+p.price{
+    font-size: 10px;
+    color: #8F9095;
+    font-weight: normal;
+    display: block;
+    margin: 20px 0;
+}
+p.desc{
+	font-weight: 500;
+	font-size: 12px;
+	color: #8F9095;
+}
+
+
+
+/********************************
+		  TESTIMONIALS
+*********************************/
+.kal-testmnls{
+	background-image: url(../imgs/bakimg-testimonials.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+}
+.kal-testmnls h1, .kal-testmnls a{color: #fff;}
+.kal-testmnls h1 {
+    margin-bottom: 90px;
+}
+.kal-testmnls a{text-decoration: none; font-size: 10px;  position: relative;}
+.kal-testmnls a:after, .kal-testmnls a::after{
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -2px;
+	height: 1px;
+	background-color: #fff;
+}
+.cream-box{
+	background: #FFF3F3;
+	color: #342B42;
+	padding: 100px 85px 60px 85px; 
+}
+.quote{
+	display: block;
+	font-size: 34px;
+	line-height: 150%;
+	font-weight: 500;
+	position: relative;
+}
+
+.quote:before, .quote::before, .quote:after, .quote::after{
+	content: '';
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+.quote:before, .quote::before{
+	left: -26px;
+    top: -36px;
+	background-image: url(../imgs/icon-darrow1.png);
+}
+.quote:after, .quote::after{
+	right: -26px;
+    bottom: -36px;
+	background-image: url(../imgs/icon-darrow2.png);
+}
+.author{
+	display: block;
+	padding-top: 50px;
+	padding-right: 10px;
+	margin-bottom: 0;
+	font-size: 16px;
+	font-weight: bold;
+	width: 133px;
+	float: right;
+}
+.author span{
+	font-weight: normal;
+	font-size: 14px;
+}
+
+
+/********************************
+		  	TABLETS
+*********************************/
+.kal-tablets h1{
+	margin-bottom: 60px;
+}
+.test-arrow{width: 34px; height: auto;}
+.test-arrow.left, .events-arrow.left {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.owl-theme .owl-nav {
+    margin-top: 10px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+}
+.owl-prev, .owl-next{position: absolute; outline: none;}
+.owl-prev{left: 10px;}
+.owl-next{right: 10px;}
+.owl-prev:hover, .owl-next:hover{background-color:transparent;}
+
+
+/********************************
+		  OUR BENEFITS
+*********************************/
+.kal-benefits{
+	padding: 100px 0 150px; 
+}
+.kal-benefits h1{
+	margin-bottom: 35px;
+}
+.benefit-box{
+	text-align: center;
+}
+.bb-top{
+	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.bb-top .img-kal.one{
+	width: 57px;
+}
+.bb-top .img-kal.two{
+	width: 38px;
+}
+.bb-top .img-kal.three{
+	width: 44px;
+}
+.bb-bottom{
+	color: #151442;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 149.5%;
+}
+
+
+/********************************
+		     Footer
+*********************************/
+.kal-footer{
+	background-color:#0F2421;
+	color:#fff;
+	padding:70px 0;
+	overflow: hidden;
+	font-size: 14px;
+	position: relative;
+}
+.kal-footer .container{position: relative;}
+.to-top{
+	position: absolute;
+	right: 15px;
+	top: -35px;
+    width: 30px;
+    height: 30px;
+}
+.kal-footer h1{
+	color: #fff;
+	margin-bottom: 40px;
+}
+.kal-footer h3{
+	font-size: 13px;
+	color: #fff;
+	line-height: 282.5%;
+	font-weight: 500;
+	margin-bottom: 25px;
+}
+.kal-footer p{
+	font-size: 10px;
+	color: #fff;
+	font-weight: normal;
+	line-height: 205.5%;
+}
+ul.kal-fmenu {
+    padding-left: 0;
+    list-style: none;
+}
+ul.kal-fmenu>li{
+	margin-bottom: 10px;
+}
+ul.kal-fmenu>li>a{
+	font-size: 10px;
+	color: #fff;
+	font-weight: normal;
+}
+
+
+
+
+
+
+
+/********************************
+		 Media Queries
+*********************************/
+@media (min-width: 1250px) {
+	.container {
+	    width: 1235px;
+	}
+}
+@media (min-width: 1200px) {	
+	.container.custom{
+		padding: 0 100px;
+	}
+	.kal-benefits .container.custom{
+		padding: 0 200px;
+	}
+}
+
+@media (max-width: 1199px) {
+	.ban-ulay{width: 54%;}
+	
+
+}
+@media (max-width: 991px) {
+	.ban-ulay {
+	    width: 51.5%;
+	}
+	.col-kh-left{padding-left: 15px;}
+	ul.ac-menu>li>a{padding-left: 40px;}
+	.kal-header .navbar-nav>li>a{padding: 15px 10px;}
+	.kal-products h1, .kal-tablets h1{text-align: left;}
+	.btn-bag{top: 10px;}
+	.cream-box{
+		padding: 50px;
+		padding-top: 70px;
+	}
+	
+}
+@media screen and (min-width: 768px){
+   ul.kal-menu li.hide-desk{display: none;}
+}
+@media (max-width: 767px) {
+	.flex{display: block;}
+	.kal-header.kal-scroll, .kal-header{padding-bottom: 5px; padding-top: 5px;}
+	.kal-scroll .img-kal-logo, .img-kal-logo { margin-left: 15px; margin-top: 20px;}
+	.navbar-inverse .navbar-toggle{ border-color: #102421;}
+	.navbar-inverse .navbar-toggle .icon-bar{background-color: #102421;}
+	.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{background-color: #fff;}
+	.ac-menu-cont {
+	    float: none;
+	    position: absolute;
+	    right: 75px;
+	    top: 8px;
+	}
+	.kal-home .btn-kal{margin-right: 10px; margin-bottom: 10px;}
+	.kal-home h1{font-size: 40px; margin-bottom: 20px;}
+	.kal-home p{margin-bottom: 20px;}
+	.ban-ulay {
+	    width: 64.5%;
+	}
+	.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{background-color: #fff;}
+	.btn-bag{right: 15px; top: 6px;}
+	h1{font-size: 45px;}
+	.kal-products h1, .kal-tablets h1{width: 66%;}
+	.section{padding: 50px 0;}
+	.pro-box{max-width: 400px; margin-left: auto; margin-right: auto;}
+	.kal-testmnls h1 {
+	    margin-bottom: 25px;
+	}
+	.cream-box{margin-top: 30px;}
+
+	
+}
+@media (max-width: 560px) {
+	
+}
+@media (max-width: 480px) {
+	/*h1{ word-break: break-all;}*/
+	h1, .carousel-caption h1{font-size: 21px; line-height: normal;}
+	h1{font-size: 26px;}
+	h2{font-size: 18px;}
+	.col-kh-left, .col-kh-right{width: 100%; padding-top: 0;}
+	.ban-ulay {width: 100%; top: 61px;}
+	.img-kal-logo{
+		-webkit-filter: drop-shadow(1px 1px 0px rgb(0 0 0 / 60%));
+    	filter: drop-shadow(1px 1px 0px rgb(0 0 0 / 60%));
+	}
+	.quote{font-size: 21px;}
+
+}
+@media (max-width: 360px) {
+	
+	
+	
+}
+
+/* Media Query for Iphones */
+
+	/* ----------- iPhone 4 and 4S ----------- */
+
+	/* Portrait and Landscape */
+	@media only screen 
+	  and (min-device-width: 320px) 
+	  and (max-device-width: 480px)
+	  and (-webkit-min-device-pixel-ratio: 2) {
+		
+	}
+	
+	/* Portrait */
+	@media only screen 
+	  and (min-device-width: 320px) 
+	  and (max-device-width: 480px)
+	  and (-webkit-min-device-pixel-ratio: 2)
+	  and (orientation: portrait) {
+		
+	}
+	
+	/* Landscape */
+	@media only screen 
+	  and (min-device-width: 320px) 
+	  and (max-device-width: 480px)
+	  and (-webkit-min-device-pixel-ratio: 2)
+	  and (orientation: landscape) {
+		
+	}
+	
+	/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+	
+	/* Portrait and Landscape */
+	@media only screen 
+	  and (min-device-width: 320px) 
+	  and (max-device-width: 568px)
+	  and (-webkit-min-device-pixel-ratio: 2) {
+	
+	}
+	
+	/* Portrait */
+	@media only screen 
+	  and (min-device-width: 320px) 
+	  and (max-device-width: 568px)
+	  and (-webkit-min-device-pixel-ratio: 2)
+	  and (orientation: portrait) {
+		  
+	}
+	
+	/* Landscape */
+	@media only screen 
+	  and (min-device-width: 320px) 
+	  and (max-device-width: 568px)
+	  and (-webkit-min-device-pixel-ratio: 2)
+	  and (orientation: landscape) {
+		
+	}
+	
+	/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+	
+	/* Portrait and Landscape */
+	@media only screen 
+	  and (min-device-width: 375px) 
+	  and (max-device-width: 667px) 
+	  and (-webkit-min-device-pixel-ratio: 2) { 
+		
+	}
+	
+	/* Portrait */
+	@media only screen 
+	  and (min-device-width: 375px) 
+	  and (max-device-width: 667px) 
+	  and (-webkit-min-device-pixel-ratio: 2)
+	  and (orientation: portrait) { 
+		
+	}
+	
+	/* Landscape */
+	@media only screen 
+	  and (min-device-width: 375px) 
+	  and (max-device-width: 667px) 
+	  and (-webkit-min-device-pixel-ratio: 2)
+	  and (orientation: landscape) { 
+		
+	}
+	
+	/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+	
+	/* Portrait and Landscape */
+	@media only screen 
+	  and (min-device-width: 414px) 
+	  and (max-device-width: 736px) 
+	  and (-webkit-min-device-pixel-ratio: 3) { 
+		
+	}
+	
+	/* Portrait */
+	@media only screen 
+	  and (min-device-width: 414px) 
+	  and (max-device-width: 736px) 
+	  and (-webkit-min-device-pixel-ratio: 3)
+	  and (orientation: portrait) { 
+		
+	}
+	
+	/* Landscape */
+	@media only screen 
+	  and (min-device-width: 414px) 
+	  and (max-device-width: 736px) 
+	  and (-webkit-min-device-pixel-ratio: 3)
+	  and (orientation: landscape) { 
+		
+	}
+	/* ----------- iPhone X ----------- */
+
+	/* Portrait and Landscape */
+	@media only screen 
+	  and (min-device-width: 375px) 
+	  and (max-device-width: 812px) 
+	  and (-webkit-min-device-pixel-ratio: 3) { 
+		
+	}
+	
+	/* Portrait */
+	@media only screen 
+	  and (min-device-width: 375px) 
+	  and (max-device-width: 812px) 
+	  and (-webkit-min-device-pixel-ratio: 3)
+	  and (orientation: portrait) { 
+		
+	}
+	
+	/* Landscape */
+	@media only screen 
+	  and (min-device-width: 375px) 
+	  and (max-device-width: 812px) 
+	  and (-webkit-min-device-pixel-ratio: 3)
+	  and (orientation: landscape) { 
+		
+	}
+	/* ----------- VIDEO MEDIA QUERY ----------- */
+/* Portrait and Landscape */
+@media(min-aspect-ratio: 16/9){}
+@media(max-aspect-ratio: 16/9){
+	
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+   /* your css rules for ipad portrait */
+   
+}
+@media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait) {
+   /* your css rules for ipad pro portrait */
+   
+	
+}
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+   /* your css rules for ipad landscape */
+   
+}
+@media all and (device-width: 1366px) and (device-height: 1024px) and (orientation:landscape) {
+   /* your css rules for ipad landscape */
+   
+}
